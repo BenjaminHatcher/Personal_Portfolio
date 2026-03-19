@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #0f0f0f;
-  color: #ffffff;
+  font-family: 'Courier New', monospace;
+  background-color: #2c263a;
+  color: #9a72ff;
   accent-color: #d362d9 ;
   margin: 0;
   padding: 0;
@@ -29,16 +31,16 @@ body {
 
 nav {
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
   padding: 1rem 2rem;
-  background-color: #0f0f0f;
+  background-color: #2c263a;
   justify-content: center;  
 }
 
 nav a {
   color: #ffffff;
   text-decoration: none;
-  font-weight: 500;          
+  font-weight: 700;          
 }
 
 nav a:hover {
@@ -48,7 +50,7 @@ nav a:hover {
 main {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 8rem;
   
 }
 
