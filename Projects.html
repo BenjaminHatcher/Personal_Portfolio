@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ben's Website – Projects</title>
+    <style>
+        body { margin: 25px; line-height: 1.6; }
+
+        .projects-header {
+            margin-bottom: 2rem;
+        }
+
+        .projects-header h1 {
+            font-size: 2.4rem;
+            color: #9a72ff;
+            margin-bottom: 0.1rem;
+        }
+
+        .projects-header p {
+            color: #d595cf;
+            font-size: 0.95rem;
+            font-weight: 300;
+            margin-top: 0;
+        }
+
+        .projects-list {
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            text-align: left;
+        }
+
+        .project-entry {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        .project-title-row {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.1rem;
+        }
+
+        .project-bullet {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 2px solid #9a72ff;
+            background: #2e2445;
+            flex-shrink: 0;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            color: #9a72ff;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .project-title a {
+            color: #d362d9;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-left: 0.4rem;
+        }
+
+        .project-title a:hover {
+            color: #ffffff;
+        }
+
+        .project-affiliation {
+            font-size: 0.9rem;
+            color: #d595cf;
+            font-style: italic;
+            margin-left: 1.35rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .project-points {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .project-points li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            font-size: 0.88rem;
+            color: #ffffff;
+            line-height: 1.55;
+        }
+
+        .project-points li::before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1.5px solid #9a72ff88;
+            background: #2e2445;
+            flex-shrink: 0;
+            margin-top: 0.35rem;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Benjamin_Hatcher_Resume.pdf">CV</a>
+    </nav>
+
+    <main>
+        <div class="projects-header">
+            <h1>Projects</h1>
+            <p>A collection of things I've built.</p>
+        </div>
+
+        <div class="projects-list">
+            <!-- HealthRoute -->
+            <div class="project-entry">
+                <div class="project-title-row">
+                    <div class="project-bullet"></div>
+                    <span class="project-title">HealthRoute - UVic Hacks Healthcare Hackathon<a href="https://github.com/BenjaminHatcher/HealthRoute">(github)</a></span>
+                </div>
+                <ul class="project-points">
+                    <li>Built a medical triage web app using FastAPI and the Gemini AI API to assess patient symptoms through a multi-step screening questionnaire and recommend ER, walk-in clinic, or home care.</li>
+                    <li>Designed a multi-stage intake flow covering emergency screening, general symptoms, pain assessment, and health background, with AI-generated recommendations tailored to the patient's location in British Columbia.</li>
+                    <li>Integrated Leaflet.js to display an interactive map of nearby clinics based on the AI's recommended care type and the patient's GPS coordinates.</li>
+                </ul>
+            </div>
+
+
+            <!-- PC Vitals Monitor -->
+            <div class="project-entry">
+                <div class="project-title-row">
+                    <div class="project-bullet"></div>
+                    <span class="project-title">PC Vitals Monitor <a href="https://github.com/BenjaminHatcher/PC-Vitals-Monitor">(github)</a></span>
+                </div>
+                <ul class="project-points">
+                    <li>Built a real-time system monitoring dashboard using Python, Flask, and psutil to expose a REST API serving live CPU and RAM statistics.</li>
+                    <li>Developed a vanilla HTML/CSS/JS frontend that polls the API every 2 seconds and displays metrics with dynamic color-coded progress bars.</li>
+                    <li>Implemented a timestamped poll log with a start/stop toggle for controlling the live data feed.</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
